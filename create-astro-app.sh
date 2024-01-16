@@ -1,4 +1,4 @@
-npm create astro "$1";
+create-astro "$1" --yes;
 cd "$1";
 rm -rf public/ src/ README.md tsconfig.json astro.config.mjs;
 mkdir src public;
