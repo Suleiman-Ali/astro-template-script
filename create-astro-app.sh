@@ -1,4 +1,4 @@
-create-astro "$1" --yes;
+create-astro "$1" --install --git --typescript strict --yes;
 cd "$1";
 rm -rf public/ src/ README.md tsconfig.json astro.config.mjs;
 mkdir src public;
