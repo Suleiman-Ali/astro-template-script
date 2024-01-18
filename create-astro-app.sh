@@ -53,5 +53,9 @@ import Main from "@/layouts/main.astro";
 <Main><main></main></Main>
 ' >> ./pages/index.astro;
 cd ..;
+npm install -D prettier prettier-plugin-tailwindcss;
+echo '{
+  "plugins": ["prettier-plugin-tailwindcss"]
+}' >> .prettierrc;
 code .;
 
