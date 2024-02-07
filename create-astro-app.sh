@@ -32,7 +32,7 @@ interface Props {
 const { title = "", description = "" } = Astro.props;
 ---
 
-<!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -42,7 +42,7 @@ const { title = "", description = "" } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <slot />
+  <main><slot /></main>
   </body>
 </html>
 ' >> ./layouts/main.astro;
@@ -50,12 +50,7 @@ echo '---
 import Main from "@/layouts/main.astro";
 ---
 
-<Main><main></main></Main>
+<Main>Home</Main>
 ' >> ./pages/index.astro;
 cd ..;
-npm install -D prettier prettier-plugin-tailwindcss;
-echo '{
-  "plugins": ["prettier-plugin-tailwindcss"]
-}' >> .prettierrc;
-code .;
 
