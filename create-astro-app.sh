@@ -6,7 +6,7 @@ echo '{
   "extends": "astro/tsconfigs/strict",
   "exclude": ["/node_modules"],
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
       "@/*": ["src/*"]
     }
