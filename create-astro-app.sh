@@ -17,6 +17,7 @@ echo 'import { defineConfig } from "astro/config";
 
 export default defineConfig({
   output: "hybrid",
+  // preftech??
 });
 ' >> astro.config.mjs;
 touch .env;
